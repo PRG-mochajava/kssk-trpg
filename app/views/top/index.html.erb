@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>かすせきTRPG保管庫</title>
+  <%= stylesheet_link_tag 'all', :media => "all" %>
+  <%= stylesheet_link_tag 'index', :media => "all" %>
+  <script src="https://kit.fontawesome.com/4a7f2e14e9.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+<!-- header -->
+    <div class="wrapper-top">
+      <p> </p>
+    </div>
+    <header class="sticky-header">
+      <img class="logo" src="images/logo.png">
+      <p><%=link_to "かすせきTRPG保管庫", top_path%></p>
+      <ul>
+          <li><%= link_to "Home", top_path %></li>
+          <li><%= link_to "About", top_path(anchor: 'about') %></li>
+          <li><%= link_to "Member", top_path(anchor: 'member')%></li>
+          <li><%= link_to "Scenario", scenario_path %></li>
+      </ul>
+    </header>
+    
+    <img class="top" src="images/top-image.png">
+
+    <div class="all-container">
+    
+      <div class="container" id="about">
+       <h1>かすせきTRPG保管庫とは</h1>
+       <p>
+         TRPGの配信やリプレイ動画、<br>
+         シナリオの執筆をするグループ
+
+       </p>
+       <h1 id="member">メンバー紹介</h1>
+      </div>
+    
+      <div class="lesson">
+        <a href="#modal-01">
+          <img class="lovecon" src="images/lovecon2.png">
+        </a>
+      
+        <img class="item" src="images/shachiicon.png"><br>
+        <img class="item" src="images/ycon.png">
+        <img class="item" src="images/takicon.png">
+        <img class="item" src="images/ハゲ.png">
+
+      </div>
+
+      <div class="modal-wrapper" id="modal-01">
+        <a href="#!" class="modal-overlay"></a>
+        <div class="modal-window">
+          <div class="modal-content">
+
+          <div class="modal-content-img">
+            <img class="love" src="images/love4.png">
+          </div>
+
+          <div class="modal-content-txt">
+            <span class="color-circle">&#9679;</span>
+            <p class="name">2らぶ</p>
+            <br><br><br>
+            <h1>局部に目星振りまーす</h1>
+            <h3>女性キャラのロールプレイを好む</h3>
+            <div class="link">
+              <a href="https://twitter.com/it_kssk_2love"><p class="twitter"><i class="fab fa-twitter"></i>Twitter</p></a>
+              <a href=""><p class="youtube"><i class="fa-brands fa-youtube"></i>Youtube</p></a>
+            </div>
+          </div>
+
+        </div>
+        <a href="#!" class="modal-close">×</a>
+      </div>
+    </div>
+  </div>
+
+    
+
+</body>
+
+</html>

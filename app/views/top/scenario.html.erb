@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>サンプルのサイト</title>
+  <%= stylesheet_link_tag 'all', :media => "all" %>
+  <%= stylesheet_link_tag 'index', :media => "all" %>
+</head>
+
+<body>
+<!-- header -->
+    <header>
+      <div class="wrapper-top">
+        <p> </p>
+      </div>
+      <div class="wrapper-bottom">
+        <p><%=link_to "かすせきTRPG保管庫", top_path%></p>
+        <ul>
+            <li><%=link_to "シナリオ", top_path%></li>
+            <li><%=link_to "予定", top_path%></li>
+        </ul>
+      </div>
+    </header>
+
+</body>
+
+</html>
